@@ -476,6 +476,10 @@
     src:url("/fonts/KhmerOSbattambang.ttf");
 }
 
+.kh{
+    font-family: 'Koulen', cursive;
+}
+
 .h-about{
     padding-top: 2rem;
 }
