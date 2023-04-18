@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Contact page')
+@section('title','About page')
 @section('content')
 <div class="container-fluit bg-primary hero-header">
         <div class="row g-3 align-items-center">

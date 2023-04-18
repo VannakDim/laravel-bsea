@@ -80,11 +80,12 @@
                 </div>
             </nav>
         </div>
+
         @yield('heading')
         @yield('carousel')
         @yield('content')
-    </div>
 
+    </div>
 
         @yield('footer')
 

@@ -12,10 +12,11 @@
         </div>
 @stop
 
-
 @section('content')
+<div class="container">
         <h1>Home page</h1>
         <p>You are home page</p>
+</div>
 @stop
 
 @section('carousel')      
