@@ -11,6 +11,8 @@
                 </div>
         </div>
 @stop
+
+
 @section('content')
         <h1>Home page</h1>
         <p>You are home page</p>

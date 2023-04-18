@@ -2,7 +2,10 @@
 @section('title','Contact page')
 @section('content')
 <div class="container-fluit bg-primary hero-header">
-        <h1>About page</h1>
-        <p>This is about page</p>
+        <div class="row g-3 align-items-center">
+                <div class="col-lg-12 text-center">
+                        <h1 class="text-white mb-4 animated zoomIn kh">អំពីសមាគមន៍</h1>
+                </div>
+        </div>
 </div>
 @stop
