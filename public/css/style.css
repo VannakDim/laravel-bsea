@@ -150,8 +150,19 @@
 
 
     .kh{
-        font-family: 'Koulen', cursive;
         font-size: 1rem;
+    }
+    .ch{
+        font-size: 1em;
+    }
+    .en{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 992px) {
+    .kh{
+        font-size: 1.7rem;
     }
     .ch{
         font-size: 1.5em;
@@ -159,9 +170,6 @@
     .en{
         font-size: 1.5em;
     }
-}
-
-@media (min-width: 992px) {
     .navbar {
         position: absolute;
         width: 100%;
