@@ -15,7 +15,7 @@
 @section('content')
 <div class="container">
         <h1>Home page</h1>
-        <p>You are home page</p>
+        <p>You are in home page</p>
 </div>
 @stop
 
