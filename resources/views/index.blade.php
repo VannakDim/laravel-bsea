@@ -12,9 +12,10 @@
                 </div>
         </div>
 </div>
+@include('layouts.carousel')
+
 @stop
 
-@include('layouts.carousel')
 
 @section('content')
 <!-- About Start -->
