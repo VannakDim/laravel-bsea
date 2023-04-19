@@ -22,8 +22,7 @@
             <!-- <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
                 <img class="img-fluid" src="img/about.png">
             </div> -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <!-- <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">About Us</div> -->
+            <div class="col-lg-6">
                 <h2 class="mb-4 h-about">អំពីសមាគមន៍</h2>
                 <p class="mb-4">សមាគមកាបូប ស្បែកជើង និងអេឡិចត្រូនិចកម្ពុជា (ស.ក.ស.អ) ជាអង្គការសមាជិកភាពដ៏លេចធ្លោមួយក្នុងព្រះរាជាណាចក្រកម្ពុជាក្នុងវិស័យដែលបានកំណត់។  
                     ស.ក.ស.អ ជាអង្គភាពមិនស្វែងរកប្រាក់ចំណេញ មិនមែនអង្គការសាសនា និងមិនមែនបម្រើនិន្នាការនយោបាយនៃបក្សនយោបាយណាមួយឡើយ។  ស.ក.ស.អ លើកកម្ពស់ឲ្យមានការចូលរួមរវាងដៃគូសន្ទនាសង្គមនានាដូចជារាជរដ្ឋាភិបាល និយោជក សហជីព និងដៃគូដទៃទៀតផងដែរ។ 
@@ -32,9 +31,9 @@
                     BSEA គ្រោងនឹងពង្រីកសមាជិករបស់ខ្លួនយ៉ាងហោចចំនួន១៥០ សហគ្រាសគ្រឹះស្ថាន ក្រុមហ៊ុនបន្ថែមទៀតនៅឆ្នាំ២០២៣ខាងមុខ។</p>
                 <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="/about">Read More</a>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6 wow fadeInUp">
                 <div class="row g-3 mb-4">
-                    <div class="col-sm-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="col-sm-12 wow fadeIn">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
                                 <i class="fa-solid fa-landmark text-white"></i>
@@ -42,7 +41,7 @@
                             <h6 class="mb-0">1.	ផ្នែកប្រតិបត្តិការ និងហិរញ្ញវត្ថុ</h6>
                         </div>
                     </div>
-                    <div class="col-sm-12 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="col-sm-12 wow fadeIn">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
                                 <i class="fa-solid fa-handshake text-white"></i>
@@ -50,7 +49,7 @@
                             <h6 class="mb-0">2.	ផ្នែកសមាជិកភាព និងទំនាក់ទំនងសាធារណៈ</h6>
                         </div>
                     </div>
-                    <div class="col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="col-sm-12 wow fadeIn">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
                                 <i class="fa fa-gavel text-white"></i>
@@ -58,7 +57,7 @@
                             <h6 class="mb-0">3.	ផ្នែកច្បាប់ និងទំនាក់ទំនងវិជ្ជាជីវៈ</h6>
                         </div>
                     </div>
-                    <div class="col-sm-12 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="col-sm-12 wow fadeIn">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
                                 <i class="fa fa-chalkboard-teacher text-white"></i>
@@ -66,7 +65,7 @@
                             <h6 class="mb-0">4.	ផ្នែកបណ្តុះបណ្តាល និងអភិវឌ្ឍន៍</h6>
                         </div>
                     </div>
-                    <div class="col-sm-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="col-sm-12 wow fadeIn">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
                                 <i class="fa fa-user-tie text-white"></i>
