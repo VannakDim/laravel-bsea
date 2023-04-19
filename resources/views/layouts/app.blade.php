@@ -85,11 +85,26 @@
         @yield('carousel')
         @yield('content')
 
-    </div>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <!-- <h5 class="text-white mb-4">Get In Touch</h5> -->
+                            <a><i class="fa fa-map-marker-alt me-3"></i><a class="text-white" href="https://goo.gl/maps/TYmLWon48gfHAK9f9">#84,#86,#88 st.Betong, Borey The Varina Sen Sok, Krang Thnong, Sen Sok, Phnom Penh, Cambodia</a></a>
+                            <br><a><i class="fa fa-phone-alt me-3"></i>+855 69 668 788</a>
+                            <br><a><i class="fa fa-envelope me-3"></i>info@bseacambodia.org</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
-        @yield('footer')
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
