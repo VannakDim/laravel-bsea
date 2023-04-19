@@ -90,11 +90,11 @@
             <div class="container">
                 <div class="copyright">
                     <div class="row">
-                        <div class="col-lg-8">
-                            <!-- <h5 class="text-white mb-4">Get In Touch</h5> -->
-                            <a><i class="fa fa-map-marker-alt me-3"></i><a class="text-white" href="https://goo.gl/maps/TYmLWon48gfHAK9f9">#84,#86,#88 st.Betong, Borey The Varina Sen Sok, Krang Thnong, Sen Sok, Phnom Penh, Cambodia</a></a>
-                            <br><a><i class="fa fa-phone-alt me-3"></i>+855 69 668 788</a>
-                            <br><a><i class="fa fa-envelope me-3"></i>info@bseacambodia.org</a>
+                        <div class="col-lg-12">
+                            <h5 class="text-white mb-4">Get In Touch</h5>
+                            <a class="text-white" href="https://goo.gl/maps/TYmLWon48gfHAK9f9"><i class="fa fa-map-marker-alt me-3"></i>#84,#86,#88 st.Betong, Borey The Varina Sen Sok, Krang Thnong, Sen Sok, Phnom Penh, Cambodia</a>
+                            <br><a class="text-white"><i class="fa fa-phone-alt me-3"></i>+855 69 668 788</a>
+                            <br><a class="text-white"><i class="fa fa-envelope me-3"></i>info@bseacambodia.org</a>
                         </div>
                     </div>
                 </div>
