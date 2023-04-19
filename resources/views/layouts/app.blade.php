@@ -75,7 +75,7 @@
         </div>
 
         @yield('heading')
-        @include('layouts.carousel')
+     
         @yield('content')
 
         <!-- Footer Start -->
