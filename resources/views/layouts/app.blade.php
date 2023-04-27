@@ -40,7 +40,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="/" class="navbar-brand p-0">
+                <a href="{{ route('home.index',app()->getLocale()) }}" class="navbar-brand p-0">
                     <img src="/img/bsea-logo.png" width="50" height="50" class="d-inline-block align-middle" alt="brand logo">
                     <h1 class="d-inline-block align-middle m-0 brand-title">BSEA Cambodia</h1>
                 </a>
@@ -49,24 +49,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="/" class="nav-item nav-link">Home</a>
-                        <a href="/about" class="nav-item nav-link">About</a>
-                        <a href="/error" class="nav-item nav-link">Service</a>
-                        <div class="nav-item dropdown">
-                            <a id="dropdown-page" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="{{ route('home.index',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.home')}}</a>
+                        <a href="{{ route('about.index',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.about')}}</a>
+                        {{-- <a href="/" class="nav-item nav-link">{{__('msg.service')}}</a> --}}
+                        {{-- <div class="nav-item dropdown">
+                            <a id="dropdown-page" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{__('msg.page')}}</a>
                             <div class="dropdown-menu m-0 page">
                                 <a href="/team" class="dropdown-item">Our Team</a>
                             </div>
-                        </div>
-                        <a href="/contact" class="nav-item nav-link">Contact</a>
-                        <a href="/auth/login" class="nav-item nav-link">Login</a>
+                        </div> --}}
+                        <a href="{{ route('contact.index',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.contact')}}</a>
+                        <a href="/auth/login" class="nav-item nav-link">{{__('msg.login')}}</a>
                         
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle lang" data-bs-toggle="dropdown">EN</a>
+                            <a class="nav-link dropdown-toggle lang" data-bs-toggle="dropdown">{{__('msg.lang')}}</a>
                             <div class="dropdown-menu m-0">
-                                <a class="dropdown-item lang-kh">ភាសាខ្មែរ</a>
-                                <a class="dropdown-item lang-en">English</a>
-                                <a class="dropdown-item lang-cn">中文</a>
+                                <a href="{{ route(Route::currentRouteName(),'kh') }}" class="dropdown-item lang-kh">ភាសាខ្មែរ</a>
+                                <a href="{{ route(Route::currentRouteName(),'en') }}" class="dropdown-item lang-en">English</a>
+                                <a href="{{ route(Route::currentRouteName(),'ch') }}" class="dropdown-item lang-cn">中文</a>
                             </div>
                         </div>
                     </div>
@@ -110,6 +110,6 @@
     <!-- Template Javascript -->
     <script src="/js/main.js"></script>
     <script src="/js/activePage.js"></script>
-    <script src="/js/langSwitcher.js"></script>
+    <!-- <script src="/js/langSwitcher.js"></script> -->
 </body>
 </html>

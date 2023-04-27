@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\PostsController;
 use \App\Http\Controllers\AboutController;
 use \App\Http\Controllers\ContactController;
+use \App\Http\Controllers\Controller;
 use \App\Http\Controllers\AuthController;
 use \App\Models\Post;
 
@@ -18,8 +19,25 @@ use \App\Models\Post;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::redirect('/','/en/home');
+
+Route::group(['prefix'=>'{language}'], function (){
+
+    Route::resource('/post', PostsController::class);
+    Route::resource('/about', AboutController::class);
+    Route::resource('/contact', ContactController::class);
+    Route::resource('home', Controller::class);
+
+    
+});
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/{lang}', function ($lang){
+    App::setLocale($lang);
+    return view ('index');
 });
 
 Route::post('/auth/save',[AuthController::class, 'save'])->name('auth.save');
@@ -37,9 +55,6 @@ Route::group(['middleware'=>['AuthCheck']], function(){
 });
 
 
-Route::resource('/post', PostsController::class);
-Route::resource('/about', AboutController::class);
-Route::resource('/contact', ContactController::class);
 
 // RAW INSERTION
 Route::get('/insert/{title}/{content}', function($title,$content){
