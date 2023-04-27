@@ -18,31 +18,39 @@
                     <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
                         <img class="img-fluid" src="/img/about.png">
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <!-- <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">About Us</div> -->
+                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
                         <h2 class="mb-4">អំពីសមាគមន៍</h2>
                         <p class="mb-4">សមាគមកាបូប ស្បែកជើង និងអេឡិចត្រូនិចកម្ពុជា (ស.ក.ស.អ) ជាអង្គការសមាជិកភាពដ៏លេចធ្លោមួយក្នុងព្រះរាជាណាចក្រកម្ពុជាក្នុងវិស័យដែលបានកំណត់។  ស.ក.ស.អ ជាអង្គភាពមិនស្វែងរកប្រាក់ចំណេញ មិនមែនអង្គការសាសនា និងមិនមែនបម្រើនិន្នាការនយោបាយនៃបក្សនយោបាយណាមួយឡើយ។  ស.ក.ស.អ លើកកម្ពស់ឲ្យមានការចូលរួមរវាងដៃគូសន្ទនាសង្គមនានាដូចជារាជរដ្ឋាភិបាល និយោជក សហជីព និងដៃគូដទៃទៀតផងដែរ។ ស.ក.ស.អ ត្រូវបានចុះបញ្ជិកាជាមួយក្រសួងការងារ និងបណ្តុះបណ្តាលវិជ្ជាជីវៈ តាមរយៈលិខិតទទួលស្គាល់លេខ ៣២២/២២ ក.ប./វ.ប.វ.ក ចុះថ្ងៃទី ១៩ ខែសីហា ឆ្នាំ២០២២។ បច្ចុប្បន្ននេះ BSEA មានសមាជិកពេញសិទ្ធិចំនួន១៥ សហគ្រាស/គ្រឹះស្ថាន ក្នុងវិស័យផលិតកាបូប ស្បែកជើង ឧបករណ៍អេឡិចត្រូនិច និងវិស័យប្រហាក់ប្រហែល ដែលគាំទ្រក្នុងសង្វាក់ផលិតកម្មផងដែរ ដែលមានកម្មករនិយោជិតកំពុងបម្រើការងារប្រមាណជា ១៥,០០០នាក់ ក្នុងនោះភាគច្រើនលើសលុបជាស្ត្រី ដែលអញ្ជើញមកពីបណ្តាខេត្ត ក្រុងនានានៅទូទាំងប្រទេសកម្ពុជា។ BSEA គ្រោងនឹងពង្រីកសមាជិករបស់ខ្លួនយ៉ាងហោចចំនួន១៥០ សហគ្រាសគ្រឹះស្ថាន ក្រុមហ៊ុនបន្ថែមទៀតនៅឆ្នាំ២០២៣ខាងមុខ។ </p>
+                    </div>
+                </div>
+                
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-12 d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                <i class="fas fa-eye text-white"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h6>ចក្ខុវិស័យ</h6>
+                                <span>ចក្ខុវិស័យរបស់យើងគឺដើម្បីធានាពីសុខដុមរមនានៃទំនាក់ទំនងវិជ្ជាជីវៈក្នុងប្រទេសកម្ពុជា។
+                                    បេសកកម្មរបស់យើងគឺបង្កើតឲ្យមានយន្តការសម្របសម្រួលមួយដ៏មានប្រសិទ្ធភាព ដែលអាចទាក់ទាញវិនិយោគិនបរទេស និងជួយលើកកម្ពស់វិនិយោគិនក្នុងស្រុក ដើម្បីបង្កើតការងារ និងទប់ស្តាត់ទេសន្តរប្រវេសន៍ដោយប្រថុយប្រថាន។ 
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                <i class="fas fa-bullseye text-white"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h6>គោលបំណង</h6>
+                                <span>គោលបំណងរបស់យើងគឺការពារ និងគោរពសិទ្ធិសេរីភាព និងផលប្រយោជន៍របស់សមាជិក, ផ្ដល់ប្រឹក្សាយោបល់ផ្នែកច្បាប់ ពាណិជ្ជកម្ម និងការបណ្តុះបណ្តាលដល់សមាជិក, ចូលរួមចំណែកធ្វើឱ្យមានសុខដុមរមនាក្នុងទំនាក់ទំនងវិជ្ជាជីវៈ និងមិនចូលរួមធ្វើសកម្មភាពនយោបាយ ឬបម្រើនិន្នាការនយោបាយណាមួយ។</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <!-- <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">About Us</div> -->
                         <div class="row g-3 mb-4">
-                            <div class="col-12 d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fas fa-eye text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h6>ចក្ខុវិស័យ</h6>
-                                    <span>ចក្ខុវិស័យរបស់យើងគឺដើម្បីធានាពីសុខដុមរមនានៃទំនាក់ទំនងវិជ្ជាជីវៈក្នុងប្រទេសកម្ពុជា។
-                                        បេសកកម្មរបស់យើងគឺបង្កើតឲ្យមានយន្តការសម្របសម្រួលមួយដ៏មានប្រសិទ្ធភាព ដែលអាចទាក់ទាញវិនិយោគិនបរទេស និងជួយលើកកម្ពស់វិនិយោគិនក្នុងស្រុក ដើម្បីបង្កើតការងារ និងទប់ស្តាត់ទេសន្តរប្រវេសន៍ដោយប្រថុយប្រថាន។ 
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="col-12 d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fas fa-bullseye text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h6>គោលបំណង</h6>
-                                    <span>គោលបំណងរបស់យើងគឺការពារ និងគោរពសិទ្ធិសេរីភាព និងផលប្រយោជន៍របស់សមាជិក, ផ្ដល់ប្រឹក្សាយោបល់ផ្នែកច្បាប់ ពាណិជ្ជកម្ម និងការបណ្តុះបណ្តាលដល់សមាជិក, ចូលរួមចំណែកធ្វើឱ្យមានសុខដុមរមនាក្នុងទំនាក់ទំនងវិជ្ជាជីវៈ និងមិនចូលរួមធ្វើសកម្មភាពនយោបាយ ឬបម្រើនិន្នាការនយោបាយណាមួយ។</span>
-                                </div>
-                            </div>
+                            
                             <div class="col-12 d-flex">
                                 <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                     <i class="fa fa-crown text-white"></i>
@@ -75,7 +83,7 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Features</div>
+                        {{-- <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Features</div> --}}
                         <h2 class="mb-4">Why People Choose Us? We Are Trusted & Award Wining Agency</h2>
                         <p>បច្ចុប្បន្ននេះ BSEA មានក្រុមប្រឹក្សាប្រតិបត្តិដែលជាថ្នាក់ដឹកនាំកំពូលចំនួន ១៧រូប ដែលអញ្ជើញមក និងតំណាងពីវិស័យសំខាន់ដូច ដែលបានជម្រាបជូនខាងលើ។</p>
                         <p>ដើម្បីឲ្យការងារសម្រេចបានទៅតាមផែនការ និងការឆ្លើយតបតាមតម្រូវការរបស់សមាជិក, ស.ក.ស.អ បានបង្កើតផ្នែកចំនួន៥ដូចខាងក្រោម៖</p>
