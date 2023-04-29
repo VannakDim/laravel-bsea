@@ -5,7 +5,7 @@
         'service'=>'Service',
         'page'=>'Page',
         'contact'=>'Contact',
-        'login'=>'Login',
-        'lang'=>'En',
+        'login'=>'Member',
+        'lang'=>'EN',
     ]
 ?>
