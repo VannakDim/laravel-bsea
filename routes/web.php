@@ -23,7 +23,7 @@ Route::redirect('/','/en/home');
 
 Route::group(['prefix'=>'{language}'], function (){
 
-    Route::resource('/post', PostsController::class);
+    // Route::resource('/post', PostsController::class);
     Route::resource('/about', AboutController::class);
     Route::resource('/contact', ContactController::class);
     Route::resource('home', Controller::class);
@@ -49,9 +49,9 @@ Route::group(['middleware'=>['AuthCheck']], function(){
     Route::get('/auth/login',[AuthController::class, 'login'])->name('auth.login');
     Route::get('/auth/register',[AuthController::class, 'register'])->name('auth.register');
     Route::get('/admin/dashboard',[AuthController::class, 'dashboard'])->name('dashboard');
-    Route::get('/admin/settings',[AuthController::class, 'settings'])->name('setting');
-    Route::get('/admin/profile',[AuthController::class, 'profile'])->name('profile');
-    Route::get('/admin/staff',[AuthController::class, 'staff'])->name('staff');
+    Route::get('/admin/post',[AuthController::class, 'post'])->name('post');
+    // Route::get('/admin/profile',[AuthController::class, 'profile'])->name('profile');
+    // Route::get('/admin/staff',[AuthController::class, 'staff'])->name('staff');
 });
 
 

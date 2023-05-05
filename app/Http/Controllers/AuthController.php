@@ -72,17 +72,9 @@ class AuthController extends Controller
         return view('admin.dashboard', $data);
     }
 
-    function settings(){
+    function post(){
         $data = ['LoggedUserInfo'=>Users::where('id','=', session('LoggedUser'))->first()];
-        return view('admin.settings', $data);
+        return view('admin.post', $data);
     }
 
-    function profile(){
-        $data = ['LoggedUserInfo'=>Users::where('id','=', session('LoggedUser'))->first()];
-        return view('admin.profile', $data);
-    }
-    function staff(){
-        $data = ['LoggedUserInfo'=>Users::where('id','=', session('LoggedUser'))->first()];
-        return view('admin.staff', $data);
-    }
 }

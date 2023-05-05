@@ -3,7 +3,7 @@
 <div class="container">
    <div class="row">
       <div class="col-md-6 col-md-offset-3">
-         @section('heading1','Dashboard')
+         @section('heading1','Posts')
          @section('username', $LoggedUserInfo['name'])
              <table class="table table-hover">
                 <thead>

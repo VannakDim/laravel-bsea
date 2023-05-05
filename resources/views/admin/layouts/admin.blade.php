@@ -203,24 +203,26 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
-                <i class="right fas fa-angle-left"></i>
+                {{-- <i class="right fas fa-angle-left"></i> --}}
               </p>
             </a>
   
           </li>
+          
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/admin/post" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
+                Posts
+                {{-- <span class="right badge badge-danger">New</span> --}}
               </p>
             </a>
           </li>
+        <!--  Layout Options
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
@@ -281,6 +283,7 @@
               </li>
             </ul>
           </li>
+        
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
@@ -814,6 +817,7 @@
               <p>Informational</p>
             </a>
           </li>
+        -->
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -828,12 +832,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">@yield('heading1')</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="/auth/logout">Logout</a></li>
-              <li class="breadcrumb-item active">@yield('active')</li>
+              <li class="breadcrumb-item active">@yield('heading1')</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
