@@ -59,7 +59,7 @@
                             </div>
                         </div> --}}
                         <a href="{{ route('contact.index',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.contact')}}</a>
-                        <a href="/auth/login" class="nav-item nav-link">{{__('msg.login')}}</a>
+                        <a href="/admin/dashboard" class="nav-item nav-link">{{__('msg.login')}}</a>
                         
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle lang" data-bs-toggle="dropdown">{{__('msg.lang')}}</a>

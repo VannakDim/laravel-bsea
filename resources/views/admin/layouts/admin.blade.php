@@ -35,7 +35,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -44,7 +44,9 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
+
       <!-- Navbar Search -->
+      <!--
       <li class="nav-item">
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">
           <i class="fas fa-search"></i>
@@ -65,6 +67,7 @@
           </form>
         </div>
       </li>
+    -->
 
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
@@ -181,22 +184,25 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">@yield('username')</a>
+          <a href="/admin/dashboard" class="d-block">@yield('username')
+            <i class="right fas fa-angle-left"></i>
+          </a>
         </div>
       </div>
 
       <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
+      <!--
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-
+      -->
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -222,6 +228,7 @@
               </p>
             </a>
           </li>
+          
         <!--  Layout Options
           <li class="nav-item">
             <a href="#" class="nav-link">

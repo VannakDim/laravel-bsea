@@ -2,14 +2,14 @@
 @section('content')
 <div class="container">
    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-lg-12 col-md-offset-3">
          @section('heading1','Posts')
          @section('username', $LoggedUserInfo['name'])
              <table class="table table-hover">
                 <thead>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th></th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Date</th>
                 </thead>
                 <tbody>
                    <tr>
@@ -20,12 +20,12 @@
                 </tbody>
              </table>
 
-             <ul>
+             {{-- <ul>
                  <li><a href="/admin/dashboard">Dashboard</a></li>
                  <li><a href="/admin/profile">Profile</a></li>
                  <li><a href="/admin/settings">Settings</a></li>
                  <li><a href="/admin/staff">Staff</a></li>
-             </ul>
+             </ul> --}}
       </div>
    </div>
 </div>
