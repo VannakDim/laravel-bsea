@@ -20,7 +20,7 @@ class AuthController extends Controller
         $request->validate([
             'name'=>'required',
             'email'=>'required|email|unique:users',
-            'password'=>'required|min:5|max:12'
+            'password'=>'required|min:5|max:30'
         ]);
 
         //Insert data into database

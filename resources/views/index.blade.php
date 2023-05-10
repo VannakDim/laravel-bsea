@@ -25,57 +25,34 @@
             <!-- <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
                 <img class="img-fluid" src="img/about.png">
             </div> -->
+            @foreach ($abouts as $about)
+            @if ($about->class == 'about')
+                
             <div class="col-lg-6">
-                <h2 class="mb-4 h-about">អំពីសមាគមន៍</h2>
-                <p class="mb-4">សមាគមកាបូប ស្បែកជើង និងអេឡិចត្រូនិចកម្ពុជា (ស.ក.ស.អ) ជាអង្គការសមាជិកភាពដ៏លេចធ្លោមួយក្នុងព្រះរាជាណាចក្រកម្ពុជាក្នុងវិស័យដែលបានកំណត់។  
-                    ស.ក.ស.អ ជាអង្គភាពមិនស្វែងរកប្រាក់ចំណេញ មិនមែនអង្គការសាសនា និងមិនមែនបម្រើនិន្នាការនយោបាយនៃបក្សនយោបាយណាមួយឡើយ។  ស.ក.ស.អ លើកកម្ពស់ឲ្យមានការចូលរួមរវាងដៃគូសន្ទនាសង្គមនានាដូចជារាជរដ្ឋាភិបាល និយោជក សហជីព និងដៃគូដទៃទៀតផងដែរ។ 
-                    ស.ក.ស.អ ត្រូវបានចុះបញ្ជិកាជាមួយក្រសួងការងារ និងបណ្តុះបណ្តាលវិជ្ជាជីវៈ តាមរយៈលិខិតទទួលស្គាល់លេខ ៣២២/២២ ក.ប./វ.ប.វ.ក ចុះថ្ងៃទី ១៩ ខែសីហា ឆ្នាំ២០២២។ បច្ចុប្បន្ននេះ BSEA មានសមាជិកពេញសិទ្ធិចំនួន១៥ សហគ្រាស/គ្រឹះស្ថាន ក្នុងវិស័យផលិតកាបូប ស្បែកជើង 
-                    ឧបករណ៍អេឡិចត្រូនិច និងវិស័យប្រហាក់ប្រហែល ដែលគាំទ្រក្នុងសង្វាក់ផលិតកម្មផងដែរ ដែលមានកម្មករនិយោជិតកំពុងបម្រើការងារប្រមាណជា ១៥,០០០នាក់ ក្នុងនោះភាគច្រើនលើសលុបជាស្ត្រី ដែលអញ្ជើញមកពីបណ្តាខេត្ត ក្រុងនានានៅទូទាំងប្រទេសកម្ពុជា។ 
-                    BSEA គ្រោងនឹងពង្រីកសមាជិករបស់ខ្លួនយ៉ាងហោចចំនួន១៥០ សហគ្រាសគ្រឹះស្ថាន ក្រុមហ៊ុនបន្ថែមទៀតនៅឆ្នាំ២០២៣ខាងមុខ។</p>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="{{ route('about.index',app()->getLocale()) }}">Read More</a>
+                <h2 class="mb-4 h-about">{{ $about->title }}</h2>
+                <p align="justify" class="mb-4">{!! html_entity_decode($about->description) !!}</p>
+                <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="{{ route('about',app()->getLocale()) }}">Read More</a>
             </div>
+            @endif
+            @endforeach
             <div class="col-lg-6 wow fadeInUp">
                 <div class="row g-3 mb-4">
+
+                    @foreach ($abouts as $about)
+                    @if ($about->class == 'section')
+                    
                     <div class="col-sm-12 wow fadeIn">
                         <div class="d-flex align-items-center mb-3">
                             <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa-solid fa-landmark text-white"></i>
+                                <i class="{{ $about->icon }}"></i>
                             </div>
-                            <h6 class="mb-0">1.	ផ្នែកប្រតិបត្តិការ និងហិរញ្ញវត្ថុ</h6>
+                            <h6 class="mb-0">{{ $about->title }}</h6>
                         </div>
                     </div>
-                    <div class="col-sm-12 wow fadeIn">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa-solid fa-handshake text-white"></i>
-                            </div>
-                            <h6 class="mb-0">2.	ផ្នែកសមាជិកភាព និងទំនាក់ទំនងសាធារណៈ</h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 wow fadeIn">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-gavel text-white"></i>
-                            </div>
-                            <h6 class="mb-0">3.	ផ្នែកច្បាប់ និងទំនាក់ទំនងវិជ្ជាជីវៈ</h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 wow fadeIn">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-chalkboard-teacher text-white"></i>
-                            </div>
-                            <h6 class="mb-0">4.	ផ្នែកបណ្តុះបណ្តាល និងអភិវឌ្ឍន៍</h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 wow fadeIn">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-user-tie text-white"></i>
-                            </div>
-                            <h6 class="mb-0">5.	ផ្នែកស្រាវជ្រាវ និងគោលនយោបាយ</h6>
-                        </div>
-                    </div>
+
+                    @endif
+                    @endforeach
+
                 </div>
             </div>
         </div>

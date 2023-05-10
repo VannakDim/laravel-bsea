@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\About;
+
 
 class AboutController extends Controller
 {
@@ -13,7 +15,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('about');
+        $abouts = About::all();
+        return view('admin.page.about.index', compact('abouts'));
     }
 
     /**
@@ -23,7 +26,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.page.about.create');
     }
 
     /**
@@ -34,7 +37,9 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        About::create($input);
+        return redirect('admin/page/about/create')->with('flash_message', 'About Addedd!');
     }
 
     /**
@@ -56,7 +61,8 @@ class AboutController extends Controller
      */
     public function edit($id)
     {
-        //
+        $about = About::find($id);
+        return view('admin/page/about/edit')->with('abouts', $about);
     }
 
     /**
@@ -68,7 +74,11 @@ class AboutController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $about = About::find($id);
+        $input = $request->all();
+        $about->update($input);
+        return redirect('/admin/page/about/create')->with('flash_message', 'student Updated!');  
     }
 
     /**
@@ -79,6 +89,7 @@ class AboutController extends Controller
      */
     public function destroy($id)
     {
-        //
+        About::destroy($id);
+        return redirect('admin/page/about')->with('flash_message', 'Post deleted!');  
     }
 }

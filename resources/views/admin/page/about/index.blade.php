@@ -1,5 +1,5 @@
 @extends('admin.layouts.admin')
-@section('heading1','Post')
+@section('heading1','About')
 
 @section('content')
     <div class="container">
@@ -7,10 +7,10 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Posts management</h2>
+                        <h2>About page</h2>
                     </div>
                     <div class="card-body">
-                        <a href="{{ url('/admin/post/create') }}" class="btn btn-success btn-sm" title="Add New Post">
+                        <a href="{{ url('/admin/page/about/create') }}" class="btn btn-success btn-sm" title="Add New Post">
                             Add New
                         </a>
                         <br/>
@@ -26,20 +26,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($posts as $post)
+                                    @foreach($abouts as $about)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $post->title }}</td>
-                                        <td>{{ $post->content }}</td>
+                                        <td width="20%">{{ $about->title }}</td>
+                                        <td>{{ $about->description }}</td>
   
                                         <td width="20%">
                                             <a href="" title="View Post"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a> 
-                                            <a href="" title="Edit Post"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a> 
+                                            <a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}" title="Edit Post"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a> 
   
-                                            <form method="POST" action="{{ url('/admin/post/' . $post->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            <form method="POST" action="{{ url('/admin/page/about/' . $about->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Post" onclick="return confirm("Confirm delete?")"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete about" onclick="return confirm("Confirm delete?")"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                             </form>
                                         </td>
                                     </tr>

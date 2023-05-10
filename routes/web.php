@@ -29,10 +29,9 @@ Route::get('/{lang}', function ($lang){
 
 Route::group(['prefix'=>'{language}'], function (){
 
-    // Route::resource('/post', PostsController::class);
-    Route::resource('about', AboutController::class);
+    Route::get('/home', [Controller::class, 'home'])->name('home');
+    Route::get('/about', [Controller::class, 'about'])->name('about');
     Route::resource('contact', ContactController::class);
-    Route::resource('home', Controller::class);
     
 });
 
@@ -44,7 +43,8 @@ Route::get('/auth/logout',[AuthController::class, 'logout'])->name('auth.logout'
 
 Route::group(['middleware'=>['AuthCheck']], function(){
     Route::get('/admin/dashboard',[AuthController::class, 'dashboard'])->name('dashboard');
-    Route::resource('admin/post',PostsController::class);
+    Route::resource('/admin/post',PostsController::class);
+    Route::resource('/admin/page/about',AboutController::class);
 });
 
 

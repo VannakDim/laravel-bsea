@@ -29,7 +29,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.posts.create');
     }
 
     /**
@@ -42,7 +42,7 @@ class PostsController extends Controller
     {
         $input = $request->all();
         Post::create($input);
-        return redirect('admin.post')->with('flash_message', 'Post Addedd!');
+        return redirect('admin/post/create')->with('flash_message', 'Post Addedd!');
     }
 
     /**

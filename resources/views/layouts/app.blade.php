@@ -40,7 +40,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="{{ route('home.index',app()->getLocale()) }}" class="navbar-brand p-0">
+                <a href="{{ route('home',app()->getLocale()) }}" class="navbar-brand p-0">
                     <img src="/img/bsea-logo.png" width="50" height="50" class="d-inline-block align-middle" alt="brand logo">
                     <h1 class="d-inline-block align-middle m-0 brand-title">BSEA Cambodia</h1>
                 </a>
@@ -49,8 +49,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="{{ route('home.index',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.home')}}</a>
-                        <a href="{{ route('about.index',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.about')}}</a>
+                        <a href="{{ route('home',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.home')}}</a>
+                        <a href="{{ route('about',app()->getLocale()) }}" class="nav-item nav-link">{{__('msg.about')}}</a>
                         {{-- <a href="/" class="nav-item nav-link">{{__('msg.service')}}</a> --}}
                         {{-- <div class="nav-item dropdown">
                             <a id="dropdown-page" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{__('msg.page')}}</a>
