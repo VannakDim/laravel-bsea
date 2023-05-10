@@ -40,7 +40,7 @@
                             </div>
                             <div class="ms-4">
                                 <h6>{{ $about->title }}</h6>
-                                <span>{!! $about->description !!}</span>
+                                <p align="justify">{!! $about->description !!}</p>
                             </div>
                         </div>
                     </div>
@@ -58,6 +58,7 @@
                 <div class="row g-5">
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h6>បច្ចុប្បន្នភាព</h6>
+                        <hr>
                         <p>បច្ចុប្បន្ននេះ BSEA មានក្រុមប្រឹក្សាប្រតិបត្តិដែលជាថ្នាក់ដឹកនាំកំពូលចំនួន ១៧រូប ដែលអញ្ជើញមក និងតំណាងពីវិស័យសំខាន់ដូច ដែលបានជម្រាបជូនខាងលើ។</p>
                         <p>ដើម្បីឲ្យការងារសម្រេចបានទៅតាមផែនការ និងការឆ្លើយតបតាមតម្រូវការរបស់សមាជិក, ស.ក.ស.អ បានបង្កើតផ្នែកចំនួន៥ដូចខាងក្រោម៖</p>
                         <!-- <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a> -->
@@ -75,7 +76,7 @@
                                     </div>
                                     <h6 class="mb-0">{{ $about->title }}</h6>
                                 </div>
-                                <p>{!! $about->description !!}</p>
+                                <p align="justify">{!! $about->description !!}</p>
                             </div>
                         </div>
                     </div>
