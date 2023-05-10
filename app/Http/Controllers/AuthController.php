@@ -72,9 +72,4 @@ class AuthController extends Controller
         return view('admin.dashboard', $data);
     }
 
-    function post(){
-        $data = ['LoggedUserInfo'=>Users::where('id','=', session('LoggedUser'))->first()];
-        return view('admin.post', $data);
-    }
-
 }

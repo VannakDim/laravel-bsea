@@ -19,37 +19,32 @@ use \App\Models\Post;
 |
 */
 
+/* Default language is English */
 Route::redirect('/','/en/home');
+
+Route::get('/{lang}', function ($lang){
+    App::setLocale($lang);
+    return view('index');
+});
 
 Route::group(['prefix'=>'{language}'], function (){
 
     // Route::resource('/post', PostsController::class);
-    Route::resource('/about', AboutController::class);
-    Route::resource('/contact', ContactController::class);
+    Route::resource('about', AboutController::class);
+    Route::resource('contact', ContactController::class);
     Route::resource('home', Controller::class);
-
     
 });
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-
-Route::get('/{lang}', function ($lang){
-    App::setLocale($lang);
-    return view ('index');
-});
-
+Route::get('/auth/login',[AuthController::class, 'login'])->name('auth.login');
+Route::get('/auth/register',[AuthController::class, 'register'])->name('auth.register');
 Route::post('/auth/save',[AuthController::class, 'save'])->name('auth.save');
 Route::post('/auth/check',[AuthController::class, 'check'])->name('auth.check');
 Route::get('/auth/logout',[AuthController::class, 'logout'])->name('auth.logout');
 
 Route::group(['middleware'=>['AuthCheck']], function(){
-
-    Route::get('/auth/login',[AuthController::class, 'login'])->name('auth.login');
-    Route::get('/auth/register',[AuthController::class, 'register'])->name('auth.register');
     Route::get('/admin/dashboard',[AuthController::class, 'dashboard'])->name('dashboard');
-    Route::get('/admin/post',[AuthController::class, 'post'])->name('post');
+    Route::resource('admin/post',PostsController::class);
 });
 
 

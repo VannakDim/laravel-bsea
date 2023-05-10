@@ -15,7 +15,7 @@ class PostsController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('posts', compact('posts'));
+        return view('admin.posts.post', compact('posts'));
     }
 
     public function contact($id){
@@ -40,7 +40,9 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Post::create($input);
+        return redirect('admin.post')->with('flash_message', 'Post Addedd!');
     }
 
     /**
@@ -85,6 +87,7 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Post::destroy($id);
+        return redirect('admin/post')->with('flash_message', 'Post deleted!');  
     }
 }
