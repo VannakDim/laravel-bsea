@@ -61,34 +61,35 @@
         <!-- Features Start -->
         <div class="container-xxl py-6">
             <div class="container">
-                <div class="row g-5">
+                <div class="row g-5 mb-3">
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h6>បច្ចុប្បន្នភាព</h6>
                         <hr>
                         <p>បច្ចុប្បន្ននេះ BSEA មានក្រុមប្រឹក្សាប្រតិបត្តិដែលជាថ្នាក់ដឹកនាំកំពូលចំនួន ១៧រូប ដែលអញ្ជើញមក និងតំណាងពីវិស័យសំខាន់ដូច ដែលបានជម្រាបជូនខាងលើ។</p>
                         <p>ដើម្បីឲ្យការងារសម្រេចបានទៅតាមផែនការ និងការឆ្លើយតបតាមតម្រូវការរបស់សមាជិក, ស.ក.ស.អ បានបង្កើតផ្នែកចំនួន៥ដូចខាងក្រោម៖</p>
                         <!-- <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a> -->
+                        </br>
+                        <hr>
                     </div>
-                </br>
-                    @foreach ($abouts as $about)
-                    @if ($about->class == 'section')
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        @foreach ($abouts as $about)
+                        @if ($about->class == 'section')
 
-                    <div class="col-md-6">
-                        <div class="row g-5">
-                            <div class="col-sm-12 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                        <i class="{{  $about->icon }}"></i>
+                            <div class="row g-5">
+                                <div class="col-sm-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                            <i class="{{  $about->icon }}"></i>
+                                        </div>
+                                        <h6 class="mb-0">{{ $about->title }}</h6>
                                     </div>
-                                    <h6 class="mb-0">{{ $about->title }}</h6>
+                                    <p align="justify">{!! $about->description !!}</p>
                                 </div>
-                                <p align="justify">{!! $about->description !!}</p>
                             </div>
-                        </div>
-                    </div>
 
-                    @endif
-                    @endforeach
+                        @endif
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
