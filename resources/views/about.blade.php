@@ -12,7 +12,7 @@
 
 @section('content')
         <!-- About Start -->
-        <div class="container-xxl py-6">
+        <div class="container-xxl py-3">
             <div class="container">
                 <div class="row g-5 align-items-center">
 
@@ -38,7 +38,6 @@
                 <div class="row g-5 align-items-center">
                 @foreach ($abouts as $about)
                 @if ($about->class == 'h6')
-                        
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="col-12 d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
@@ -61,7 +60,7 @@
         <!-- Features Start -->
         <div class="container-xxl py-6">
             <div class="container">
-                <div class="row g-5 mb-3">
+                <div class="row g-5">
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h6>បច្ចុប្បន្នភាព</h6>
                         <hr>
