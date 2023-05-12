@@ -76,8 +76,8 @@ class AboutController extends Controller
     {
         $about = About::findOrFail($id);
         if($request->hasFile("description")){
-            $name=$request->file("description")->getClientOriginalName();
-            $file=$request->file("description")->storeAs('public/img',$name);
+            $name=$request->file("description")->time().'-'.getClientOriginalName();
+            $file=$request->file("description")->storeAs('img',$name);
             // $about->description=time().'-'.$file->getClientOriginalName();
             // dd($request->all());
             // $request['description']=$about->description;
