@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
-                        <img class="img-fluid" src="/img/about.png">
+                        <img class="img-fluid" src="/storage/app/img/about.png">
                     </div>
                     @foreach ($abouts as $about)
                     @if ($about->title == 'image')
