@@ -12,7 +12,7 @@
         <input type="hidden" name="id" id="id" value="{{$abouts->id}}" />
         
         @if ($abouts->title == 'image')
-        <img src="/storage/img/{{ $abouts->description }}" alt="/storage/img/{{ $abouts->description }}" id="cover" style="max-width: 200px"></br>
+        <img src="/storage/app/img/{{ $abouts->description }}" alt="/storage/app/img/{{ $abouts->description }}" id="cover" style="max-width: 200px"></br>
         <input type="file" name="description" id="input-file-now-custom-3" class="form-controll py-3"></br>
             {{-- <label>Image path</label></br> --}}
         @else
