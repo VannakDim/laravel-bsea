@@ -18,7 +18,7 @@
                     @foreach ($abouts as $about)
                     @if ($about->title == 'image')
                         <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="{{ asset('/storage/app/public/img/'.$about->description) }}">
+                            <img class="img-fluid" src="/img/about.png">
                         </div>
                     
                     @elseif ($about->class == 'about')
