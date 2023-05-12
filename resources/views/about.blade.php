@@ -15,14 +15,18 @@
         <div class="container-xxl py-6">
             <div class="container">
                 <div class="row g-5 align-items-center">
+
+                    {{-- Display About Image --}}
                     @foreach ($abouts as $about)
                     @if ($about->title == 'image')
                     <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
                         <img class="img-fluid" src="/storage/app/img/{{ $about->description }}">
                     </div>
-                    
-                    @elseif ($about->class == 'about')
-                        
+                    @endif
+                    @endforeach
+
+                    @foreach ($abouts as $about)
+                    @if ($about->class == 'about')
                     <div class="col-lg-6">
                         <h2 class="mb-4 h-about">{{ $about->title }}</h2>
                         <p align="justify" class="mb-4">{!! html_entity_decode($about->description) !!}</p>
