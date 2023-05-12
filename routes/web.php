@@ -19,6 +19,12 @@ use \App\Models\Post;
 |
 */
 
+Route::get('/link', function(){
+    $targetFolder = storage_path('app/public');
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'].'/storage';
+    symlink($targetFolder,$linkFolder);
+});
+
 /* Default language is English */
 Route::redirect('/','/en/home');
 

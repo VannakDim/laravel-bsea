@@ -78,9 +78,6 @@ class AboutController extends Controller
         if($request->hasFile("description")){
             $name=$request->file("description")->getClientOriginalName();
             $file=$request->file("description")->storeAs('img',$name);
-            // $about->description=time().'-'.$file->getClientOriginalName();
-            // dd($request->all());
-            // $request['description']=$about->description;
             $about->update([
                 "description"=>$name,
             ]);
