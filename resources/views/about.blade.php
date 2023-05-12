@@ -12,7 +12,7 @@
 
 @section('content')
         <!-- About Start -->
-        <div class="container-xxl py-3">
+        <div class="container-xxl py-3 mt-3">
             <div class="container">
                 <div class="row g-5 align-items-center">
 
@@ -58,7 +58,7 @@
 
 
         <!-- Features Start -->
-        <div class="container-xxl py-6">
+        <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
