@@ -15,11 +15,13 @@
         <div class="container-xxl py-6">
             <div class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
-                        <img class="img-fluid" src="/img/about.png">
-                    </div>
                     @foreach ($abouts as $about)
-                    @if ($about->class == 'about')
+                    @if ($about->title == 'image')
+                        <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="{{ asset('storage/img/'.$about->description) }}">
+                        </div>
+                    
+                    @elseif ($about->class == 'about')
                         
                     <div class="col-lg-6">
                         <h2 class="mb-4 h-about">{{ $about->title }}</h2>

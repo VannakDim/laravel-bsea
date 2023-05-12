@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\About;
-
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class AboutController extends Controller
 {
@@ -39,7 +39,7 @@ class AboutController extends Controller
     {
         $input = $request->all();
         About::create($input);
-        return redirect('admin/page/about/create')->with('flash_message', 'About Addedd!');
+        return redirect()->back()->with('flash_message', 'About Addedd!');
     }
 
     /**
@@ -74,11 +74,22 @@ class AboutController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $about = About::findOrFail($id);
+        if($request->hasFile("description")){
+            $name=$request->file("description")->getClientOriginalName();
+            $file=$request->file("description")->storeAs('public/img',$name);
+            // $about->description=time().'-'.$file->getClientOriginalName();
+            // dd($request->all());
+            // $request['description']=$about->description;
+            $about->update([
+                "description"=>$name,
+            ]);
+        }else{
+            $input = $request->all();
+            $about->update($input);
+        }
         
-        $about = About::find($id);
-        $input = $request->all();
-        $about->update($input);
-        return redirect('/admin/page/about/create')->with('flash_message', 'student Updated!');  
+        return redirect()->back();
     }
 
     /**
@@ -90,6 +101,6 @@ class AboutController extends Controller
     public function destroy($id)
     {
         About::destroy($id);
-        return redirect('admin/page/about')->with('flash_message', 'Post deleted!');  
+        return redirect()->back(); 
     }
 }
