@@ -26,7 +26,7 @@
                         @foreach($abouts as $about)
                         <tr>
                             {{-- <td>{{ $loop->iteration }}</td> --}}
-                            <td width="20%"><a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}">{{ $about->title }}</a></td>
+                            <td><a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}">{{ $about->title }}</a></td>
                             <td>
                                 @if($about->title == 'image')
                                     <img src="/storage/app/img/{{ $about->description }}" alt="about image" id="cover" style="max-width: 150px">
@@ -35,7 +35,7 @@
                                 @endif
                             </td>
 
-                            <td width="20%">
+                            <td>
                                 {{-- <a href="" title="View Post"><button class="btn btn-info btn-sm"><i aria-hidden="true"></i> View</button></a>  --}}
                                 <a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}" title="Edit Post"><button class="btn btn-primary btn-sm"><i class="far fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a> 
 
