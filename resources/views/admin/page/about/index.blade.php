@@ -16,7 +16,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            {{-- <th>#</th> --}}
                             <th>Title</th>
                             <th>Description</th>
                             <th>Actions</th>
@@ -25,7 +25,7 @@
                     <tbody>
                         @foreach($abouts as $about)
                         <tr>
-                            <td>{{ $loop->iteration }}</td>
+                            {{-- <td>{{ $loop->iteration }}</td> --}}
                             <td width="20%"><a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}">{{ $about->title }}</a></td>
                             <td>{{ \Illuminate\Support\Str::limit($about->description, 50) }}</td>
 
