@@ -27,7 +27,13 @@
                         <tr>
                             {{-- <td>{{ $loop->iteration }}</td> --}}
                             <td width="20%"><a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}">{{ $about->title }}</a></td>
-                            <td>{{ \Illuminate\Support\Str::limit($about->description, 50) }}</td>
+                            <td>
+                                @if($about->title == 'image')
+                                    <img src="/storage/app/img/{{ $about->description }}" alt="about image" id="cover" style="max-width: 150px">
+                                @else
+                                    {{ \Illuminate\Support\Str::limit($about->description, 50) }}
+                                @endif
+                            </td>
 
                             <td width="20%">
                                 <a href="" title="View Post"><button class="btn btn-info btn-sm"><i aria-hidden="true"></i> View</button></a> 
