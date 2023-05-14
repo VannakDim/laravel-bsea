@@ -37,7 +37,7 @@
 
                             <td>
                                 {{-- <a href="" title="View Post"><button class="btn btn-info btn-sm"><i aria-hidden="true"></i> View</button></a>  --}}
-                                <a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}" title="Edit Post"><button class="btn btn-primary btn-sm"><i class="far fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a> 
+                                {{-- <a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}" title="Edit Post"><button class="btn btn-primary btn-sm"><i class="far fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>  --}}
 
                                 <form method="POST" action="{{ url('/admin/page/about/' . $about->id) }}" accept-charset="UTF-8" style="display:inline">
                                     <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
