@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin')
 @section('heading1','About')
-
+@section('username', 'Admin')
 @section('content')
     <div class="card">
         <div class="card-header">

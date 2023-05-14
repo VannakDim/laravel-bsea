@@ -182,11 +182,11 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="/storage/app/img/{{ Session::get('photo') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/admin/dashboard" class="d-block">@yield('username')
-            <i class="right fas fa-angle-left"></i>
+          <a href="/admin/user" class="d-block">{{ Session::get('name') }}
+            {{-- <i class="right fas fa-angle-left"></i> --}}
           </a>
         </div>
       </div>
@@ -249,13 +249,13 @@
               </li>
               <li class="nav-item">
                 <a href="/admin/page/about" class="nav-link">
-                  <i class="fas fa-university nav-icon"></i>
+                  <i class="fas fa-list nav-icon"></i>
                   <p>About</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/layout/boxed.html" class="nav-link">
-                  <i class="fas fa-address-book nav-icon"></i>
+                  <i class="fas fa-pen nav-icon"></i>
                   <p>Contact</p>
                 </a>
               </li>

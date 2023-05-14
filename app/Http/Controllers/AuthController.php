@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Users;
 use Illuminate\Support\Facades\Hash;
+use Session;
 
 
 class AuthController extends Controller
@@ -41,7 +42,7 @@ class AuthController extends Controller
         //Validate requests
         $request->validate([
              'email'=>'required|email',
-             'password'=>'required|min:5|max:12'
+             'password'=>'required|min:5|max:30'
         ]);
 
         $userInfo = Users::where('email','=', $request->email)->first();
@@ -51,7 +52,11 @@ class AuthController extends Controller
         }else{
             //check password
             if(Hash::check($request->password, $userInfo->password)){
-                $request->session()->put('LoggedUser', $userInfo->id);
+                $request->session()->put('LoggedUser', ['userID'=>$userInfo->id, 'name'=>$userInfo->name]);
+                Session::put('id',$userInfo->id);
+                Session::put('name',$userInfo->name);
+                Session::put('email',$userInfo->email);
+                Session::put('photo',$userInfo->photo);
                 return redirect('/admin/dashboard');
 
             }else{
@@ -68,8 +73,7 @@ class AuthController extends Controller
     }
     
     function dashboard(){
-        $data = ['LoggedUserInfo'=>Users::where('id','=', session('LoggedUser'))->first()];
-        return view('admin.dashboard', $data);
+        return view('admin.dashboard');
     }
 
 }

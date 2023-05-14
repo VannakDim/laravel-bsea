@@ -1,10 +1,9 @@
 @extends('admin.layouts.admin')
 @section('content')
+@section('heading1','Dashboard')
 <div class="container">
    <div class="row">
       <div class="col-lg-12 col-md-offset-3">
-         @section('heading1','Dashboard')
-         @section('username', $LoggedUserInfo['name'])
              <table class="table table-hover">
                 <thead>
                   <th>Name</th>
@@ -13,8 +12,8 @@
                 </thead>
                 <tbody>
                    <tr>
-                      <td>{{ $LoggedUserInfo['name'] }}</td>
-                      <td>{{ $LoggedUserInfo['email'] }}</td>
+                      <td>{{ Session::get('name') }}</td>
+                      <td>{{ Session::get('email') }}</td>
                       <td><a href="{{ route('auth.logout') }}">Logout</a></td>
                    </tr>
                 </tbody>
