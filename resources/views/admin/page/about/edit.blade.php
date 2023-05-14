@@ -5,6 +5,11 @@
 <div class="card" style="margin:20px;">
   <div class="card-header"><h2>Edit About Information</h2></div>
   <div class="card-body">
+    @if (\Session::has('flash_message'))
+      <div class="alert alert-info">
+              {!! \Session::get('flash_message') !!}
+      </div>
+    @endif
        
       <form action="{{ url('/admin/page/about/' .$abouts->id) }}" method="post" enctype="multipart/form-data">
         {!! csrf_field() !!}

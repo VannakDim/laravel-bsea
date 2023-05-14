@@ -29,19 +29,20 @@
                                     @foreach($abouts as $about)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td width="20%">{{ $about->title }}</td>
-                                        <td>{{ $about->description }}</td>
+                                        <td width="30%"><a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}">{{ $about->title }}</a></td>
+                                        <td>{{ \Illuminate\Support\Str::limit($about->description, 50) }}</td>
   
                                         <td width="20%">
                                             <a href="" title="View Post"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a> 
-                                            <a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}" title="Edit Post"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a> 
+                                            <a href="{{ url('/admin/page/about/' . $about->id .'/edit') }}" title="Edit Post"><button class="btn btn-primary btn-sm"><i class="far fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a> 
   
                                             <form method="POST" action="{{ url('/admin/page/about/' . $about->id) }}" accept-charset="UTF-8" style="display:inline">
-                                                {{ method_field('DELETE') }}
-                                                {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete about" onclick="return confirm("Confirm delete?")"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                                <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
+                                                @csrf
+                                                @method('delete')
                                             </form>
                                         </td>
+                                    </a>
                                     </tr>
                                 @endforeach
                                 </tbody>

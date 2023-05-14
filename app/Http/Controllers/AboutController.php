@@ -39,7 +39,7 @@ class AboutController extends Controller
     {
         $input = $request->all();
         About::create($input);
-        return redirect()->back()->with('flash_message', 'About Addedd!');
+        return redirect()->back()->with('flash_message', 'Record Addedd!');
     }
 
     /**
@@ -86,15 +86,9 @@ class AboutController extends Controller
             $about->update($input);
         }
         
-        return redirect()->back();
+        return redirect()->back()->with('flash_message', 'Record Updated!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         About::destroy($id);
