@@ -47,7 +47,7 @@
                         @method("PATCH")
                         <div class="form-group">
                             <img src="/storage/app/img/{{ Session::get('photo') }}" alt="" width="300px">
-                            <label>Profile photo</label></br>
+                            </br><label>Profile photo</label></br>
                             <input type="file" name="photo">
                         </div>
                         {{-- <div class="form-group">
