@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Users;
+use Session;
 
 class UserController extends Controller
 {
@@ -73,6 +74,7 @@ class UserController extends Controller
         if($request->hasFile("photo")){
             $name=$request->file("photo")->getClientOriginalName();
             $file=$request->file("photo")->storeAs('img',$name);
+            Session::put('photo',$name);
             $user->update([
                 "photo"=>$name,
             ]);

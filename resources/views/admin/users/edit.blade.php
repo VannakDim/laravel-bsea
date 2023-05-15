@@ -1,4 +1,5 @@
 @extends('admin.layouts.admin')
+@section('heading1','User')
 @section('content')
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
@@ -45,6 +46,7 @@
                         @csrf
                         @method("PATCH")
                         <div class="form-group">
+                            <img src="/storage/app/img/{{ Session::get('photo') }}" alt="">
                             <label>Profile photo</label></br>
                             <input type="file" name="photo">
                         </div>
