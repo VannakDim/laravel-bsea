@@ -46,7 +46,7 @@
                         @csrf
                         @method("PATCH")
                         <div class="form-group">
-                            <img src="/storage/app/img/{{ Session::get('photo') }}" alt="">
+                            <img src="/storage/app/img/{{ Session::get('photo') }}" alt="" width="300px">
                             <label>Profile photo</label></br>
                             <input type="file" name="photo">
                         </div>
