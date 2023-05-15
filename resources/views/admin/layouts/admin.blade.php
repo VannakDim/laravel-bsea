@@ -186,7 +186,7 @@
           {{-- <img src="/storage/app/img/{{ Session::get('photo') }}" class="img-circle elevation-2" alt="Image"> --}}
         </div>
         <div class="info">
-          <a href="/admin/user" class="d-block">{{ Session::get('name') }}
+          <a href="/admin/user/{{Session::get('id')}}/edit" class="d-block">{{ Session::get('name') }}
             {{-- <i class="right fas fa-angle-left"></i> --}}
           </a>
         </div>
