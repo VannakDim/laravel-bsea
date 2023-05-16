@@ -24,7 +24,7 @@
           <label>Title</label></br>
           <input type="text" name="title" value="{{$abouts->title}}" class="form-control"></br>
           <label>Description</label></br>
-          <input type="text" name="description" value="{{$abouts->description}}" class="form-control"></br>
+          <textarea name="description" class="form-control">{{$abouts->description}}</textarea></br>
           <label>Class</label></br>
           <input type="text" name="class" value="{{$abouts->class}}" class="form-control"></br>
           <label>Icon as text</label></br>

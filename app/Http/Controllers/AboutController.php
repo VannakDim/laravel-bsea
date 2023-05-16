@@ -38,6 +38,10 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title'=>'required',
+            'description'=>'required',
+        ]);
         $input = $request->all();
         About::create($input);
         return redirect()->back()->with('flash_message', 'Record Addedd!');
@@ -93,6 +97,6 @@ class AboutController extends Controller
     public function destroy($id)
     {
         About::destroy($id);
-        return redirect()->back(); 
+        return redirect()->back()->with('flash_message', 'Record deleted!');
     }
 }

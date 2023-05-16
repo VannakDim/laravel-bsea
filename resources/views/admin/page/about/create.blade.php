@@ -13,9 +13,11 @@
       <form action="{{ url('/admin/page/about') }}" method="post">
         {!! csrf_field() !!}
         <label>Title</label></br>
-        <input type="text" name="title" class="form-control"></br>
+        <input type="text" name="title" class="form-control">
+        <span class="text-danger">@error('title'){{ $message }} @enderror</span></br>
         <label>Description</label></br>
-        <input type="text" name="description" class="form-control"></br>
+        <textarea name="description" class="form-control"></textarea>
+        <span class="text-danger">@error('description'){{ $message }} @enderror</span></br>
         <label>Class</label></br>
         <input type="text" name="class" class="form-control"></br>
         <label>Icon as text</label></br>
